@@ -45,3 +45,22 @@ This method is used to add a new user to the MikroTik router.
 
 Parameters:
 $userInfo (array): An associative array containing user details such as username, password, and profile.
+$userInfo = [
+    'username' => 'newuser',
+    'password' => 'password123',
+    'profile'  => 'default',
+    'routerIp' => '192.168.88.1',
+];
+$mk->user_add($userInfo);
+
+
+get_all_online_users()
+This method retrieves all users who are currently online.
+$onlineUsers = $mk->get_all_online_users();
+echo "Currently online users: " . implode(', ', $onlineUsers);
+
+
+get_all_offline_users()
+This method retrieves all users who are currently offline.
+$offlineUsers = $mk->get_all_offline_users();
+echo "Currently offline users: " . implode(', ', $offlineUsers);
