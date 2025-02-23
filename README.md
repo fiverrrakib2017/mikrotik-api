@@ -15,3 +15,26 @@ To install the package, you can use Composer:
 
 ```bash
 composer require rakibas375/mikrotik-php
+
+<?php
+
+require 'vendor/autoload.php';
+
+use Rakib\Mikrotik\MikrotikAPI;
+
+// Create an instance of the class
+$mk = new MikrotikAPI();
+
+// Add a user to MikroTik router
+$userInfo = [
+    'username' => 'newuser',       // The username for the new user
+    'password' => 'password123',   // The password for the new user
+    'profile'  => 'default',       // The profile to assign the user (e.g., bandwidth profile)
+    'routerIp' => '192.168.88.1',  // The IP address of the MikroTik router
+];
+
+// Add the user and get the response from MikroTik
+$response = $mk->user_add($userInfo);
+
+// Print the response from MikroTik API (success or error message)
+echo $response;
