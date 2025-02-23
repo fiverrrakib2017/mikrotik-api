@@ -7,6 +7,12 @@
             "APP\\Rakib\\MikroTik\\": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/fiverrrakib2017/mikrotik-api.git"
+        }
+    ],
     "version": "1.0.0",
     "authors": [
         {
@@ -14,5 +20,7 @@
             "email": "rakibas375@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+         "rakib/mikrotik-php": "master"
+    }
 }
