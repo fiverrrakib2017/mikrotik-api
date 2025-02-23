@@ -1,5 +1,5 @@
 {
-    "name": "rakib/mikrotik-php",
+    "name": "rakibas375/mikrotik-php",
     "description": "A simple PHP API client for MikroTik routers.",
     "type": "library",
     "autoload": {
