@@ -1,6 +1,7 @@
 {
     "name": "rakibas375/mikrotik-php",
-    "description": "A simple PHP API client for MikroTik routers.",
+    "description": "A PHP class for managing MikroTik users via API. This package allows you to add, remove, and update users, monitor their status (online/offline), and manage their bandwidth and packages on MikroTik routers. It simplifies integration with MikroTik routers and helps automate the process of user management in an ISP billing system.
+",
     "type": "library",
     "autoload": {
         "psr-4": {
