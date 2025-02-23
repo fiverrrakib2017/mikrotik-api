@@ -38,3 +38,11 @@ $response = $mk->user_add($userInfo);
 
 // Print the response from MikroTik API (success or error message)
 echo $response;
+
+
+## Methods
+user_add($userInfo)
+This method is used to add a new user to the MikroTik router.
+
+Parameters:
+$userInfo (array): An associative array containing user details such as username, password, and profile.
