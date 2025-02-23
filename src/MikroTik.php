@@ -1,6 +1,6 @@
 <?php
 
-namespace MikroTik;
+namespace MikrotikAPI;
 
 class MikroTik {
     private $router_ip;
